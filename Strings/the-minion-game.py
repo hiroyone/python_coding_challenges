@@ -26,12 +26,10 @@ def make_substr_initial(string):
 
 
 def cal_total(string):
-    kevin_score = 0
-    stuart_score = 0
     substr_list = make_substr_initial(string)
     (vowel_count, consonant_count) = count_phonics(substr_list)
-    kevin_score += vowel_count
-    stuart_score += consonant_count
+    kevin_score = vowel_count
+    stuart_score = consonant_count
     return (kevin_score, stuart_score)
 
 

@@ -30,12 +30,10 @@ def count_substring_initials(string):
 
 
 def cal_total(string):
-    kevin_score = 0
-    stuart_score = 0
     alphabet_frequency = count_substring_initials(string)
     (vowel_count, consonant_count) = count_phonics(alphabet_frequency)
-    kevin_score += vowel_count
-    stuart_score += consonant_count
+    kevin_score = vowel_count
+    stuart_score = consonant_count
     return (kevin_score, stuart_score)
 
 
